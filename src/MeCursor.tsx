@@ -26,7 +26,10 @@ const MeCursor = ({
 
     useEffect(() => {
         const keydown = (e: KeyboardEvent) => {
-            if (e.code === 'Slash') {
+            /*if (e.code === 'Slash') {
+                setShowInput(true);
+            }*/
+            if (e.code === 'KeyC' && e.shiftKey) {
                 setShowInput(true);
             }
 
